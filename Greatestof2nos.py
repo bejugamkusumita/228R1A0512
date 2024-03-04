@@ -6,10 +6,8 @@ def greatest():
         num1 = int(a.get())
         num2 = int(b.get())
         if num1 > num2:
-            res.delete(0, END)
             res.insert(0, str(num1))
         else:
-            res.delete(0, END)
             res.insert(0, str(num2))
     except ValueError:
         messagebox.showerror("Error", "Please enter valid integers")
